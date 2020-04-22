@@ -20,6 +20,7 @@
 *{
 	padding: 0px;
 	margin: 0px;
+
 }
 	
 body{
@@ -32,7 +33,6 @@ body{
 	clear: none;
 }
 
-/*---Clearfix---*/
 
 /*----Formularios----*/
 input[type="text"],
@@ -65,7 +65,7 @@ button{
 	border-radius: 3px;
 	width: 220px;
 	padding: 25px;
-	background-color: lightgray;
+	background-color: #87CEFA;
 	cursor: pointer;
 	color: white;
 	font-size: 15px;
@@ -82,7 +82,7 @@ input[type="submit"]:active
 input[type="reset"]:active
 button{
 	box-shadow: 0px 0px 15px blue inset;
-	text-shadow: 0px 0px 30px blue;
+	text-shadow: 0px 0px 30px #87CEFA;
 }
 /*---Fin de estilos generales-----*/
 
@@ -195,16 +195,19 @@ button{
 	display: block;
 	margin: 0px auto;
 	position: absolute;
-	color: white;
+	color: darkslategray;
 	text-shadow: 0px 0px 3px #ccc;
 	margin-top: -655px;
-	margin-left: 250px;
-	background-color: #87CEFA;
+	margin-left: 174px;
+	border: 3px solid #87CEFA;
+	border-radius: 10px;
+	background-color:  #87CEFA;
+	transition: text-shadow 1s;
 }
 
 
 #preinicio h2:hover{
-	text-shadow: 1px 1px 20px #ADD8E6;
+	text-shadow: 1px 1px 30px #87CEFA;
 	transition: 700ms;
 }
 
@@ -213,15 +216,20 @@ button{
 	display: block;
 	margin: 0px auto;
 	position: absolute;
-	color: white;
+	color: darkslategray;
+	background-color: #87CEFA;
+	border: 1px solid #87CEFA;
+	border-radius: 10px;
 	margin-top: -590px;
 	margin-left: 400px;
+	text-shadow: 1px 1px 3px #87CEFA;
+	transition: text-shadow 1s;
 
 }
 
 
 #preinicio h4:hover{
-	text-shadow: 1px 1px 20px #ADD8E6;
+	text-shadow: 2px 2px 20px #ADD8E6;
 	transition: 700ms;
 }
 
@@ -229,13 +237,16 @@ button{
 	position: absolute;
 	margin-left: 695px;
 	margin-top: -460px;
+	border: 1px solid #87CEFA;
+	border-radius: 7px;
 	text-transform: uppercase;
+	transition: border 1s, background 1s;
 }
 
 #preinicio button:hover{
 	text-shadow: 2px 2px 30px blue !important;
-	background-color: #87CEFA !important;
-	transition: all 700ms
+	background-color: #4682B4 !important;
+	transition: all 500ms
 }
 
 #preinicio a{
@@ -243,35 +254,40 @@ button{
 	color: black;
 }
 
+/*---Divisor preinicio---*/
 
+.divisorh1{
+	color: #87CEFA;
+}
+
+.divisorh2{
+	font-size: 35px;
+	color: darkslategray;
+	text-shadow: 0px 0px 1px darkslategray;
+}
+
+.divisorh3{
+	text-transform: uppercase;
+	color: darkgray;
+}
 /*--- Seccion inicio---*/
 #inicio{
 	width: 75%;
 	margin: 0px auto;
 	padding: 15px;
-	min-height: 1500px;
-	margin-top: 50px;
+	min-height: 780px;
+	margin-top: 125px;
 }
 
 #contenidoinicio{
-	max-width: 1020px;
-	margin-left: 100px;
+	max-width: 1245px;
+	margin-left: -60px;
 }
 
 #contenidoinicio button{
 	width: 60px;
 }
 
-#cajainicio{
-	display: block;
-	width: 315px;
-	height: 500px;
-	background-color: white;
-	float: left;
-	margin-left: 25px;
-	margin-top: 25px;
-
-}
 
 #cajainicio img{
 	width: 315px;
@@ -279,13 +295,18 @@ button{
 	border-bottom: 3px solid #87CEFA;
 }
 
+#cajainicio img:hover{
+
+}
+
 #cajainicio{
 	display: block;
 	width: 315px;
-	height: 450px;
+	height: 480px;
 	background-color: white;
 	float: left;
-	margin-left: 25px;
+	margin-left: 100px;
+	margin-top: 80px;
 }
 #cajainicio p{
 	text-align: center;
@@ -296,7 +317,6 @@ button{
 }
 
 #cajainicio h4{
-	font-style: italic;
 	text-align: center;
 	font-family: fajala;
 	font-size: 17px;
@@ -304,30 +324,97 @@ button{
 	line-height: 25px;
 }
 
-#cajainicio a{
-	text-transform: uppercase;
-	text-decoration: none;
-	margin-left: 110px;
-	margin-top: 40px;
-	color: black;
-	padding: 10px;
-}
-
 #cajainicio button{
+	position: absolute;
 	display: block;
-	border-radius: 3px;
-	width: 220px;
-	padding: 25px;
-	background-color: lightgray;
+	width: 120px;
+	padding: 13px;
+	background-color: #87CEFA;
 	cursor: pointer;
 	color: white;
-	font-size: 15px;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-left: 102px;
+	margin-top: -10px;
+	color: black;
+	border: 1px solid #87CEFA;
+	border-radius: 7px;
+	text-shadow: 1px 1px 3px #ccc;
+	transition: text-shadow 1s, background 1s;
+}
+
+#cajainicio button:hover{
+	text-shadow: 2px 2px 30px blue !important;
+	background-color: #87CEFA !important;
+	transition: all 500ms
+}
+
+#cajainicio a{
+	text-decoration: none;
 }
 
 
-/*----Fin de estilos del menu inicio-----*/
+/*---Seccion nosotros---*/
+#nosotros{
+	width: 100%;
+	min-height: 800px;
+	margin-top: 40px;
+}
 
-/*---Inicio de estilos de seccion contacto----*/
+#contenidonosotros{
+	width: 100%;
+	min-height: 800px;
+}
+#acerca{
+	height: 460px;
+	width: 780px;
+	padding: 20px;
+	background-color: #87CEFA;
+	margin-top: -30px;
+}
+
+#acerca p{
+	font-style: italic;
+	font-size: 18px;
+	text-align: justify;
+	line-height: 20px;
+	color: white;
+	margin-top: 100px;
+	margin-left: 150px;
+	margin-right: 50px;
+}
+
+#acerca button{
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #87CEFA;
+	position: absolute;
+	background-color: white !important;
+	width: 320px; 
+	height: 50px;
+	padding-top: 18px;
+	margin-left: 434px;
+	margin-top: 60px;
+	border: 1px solid #87CEFA;
+	border-radius: 10px;
+}
+
+#acerca button:hover{
+	text-shadow: 0px 0px 10px #87CEFA;
+}
+
+#imgacerca{
+	float: right;
+	height: 520px;
+	width: 600px;
+	border: 1px solid black;
+}
+
+.titulonosotros{
+	margin-left: 140px;
+}
+
+/*---Sección contacto----*/
 #contacto{
 	padding-top: 23px;
 	padding-right: 70px;
@@ -335,7 +422,7 @@ button{
 	padding-left: 70px;
 	border: 3px solid #1E5A7F;
 	margin: 0px auto;
-	background-color: #1E5A7F;
+	background-color: #87CEFA;
 }
 
 #cajaformulario{
