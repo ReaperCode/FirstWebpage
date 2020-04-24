@@ -295,9 +295,6 @@ button{
 	border-bottom: 3px solid #87CEFA;
 }
 
-#cajainicio img:hover{
-
-}
 
 #cajainicio{
 	display: block;
@@ -356,35 +353,52 @@ button{
 
 /*---Seccion nosotros---*/
 #nosotros{
+	margin:0px auto;
 	width: 100%;
-	min-height: 800px;
+	min-height: 1200px;
 	margin-top: 40px;
 }
 
 #contenidonosotros{
-	width: 100%;
-	min-height: 800px;
+	max-width: 1585px;
 }
 #acerca{
-	height: 460px;
-	width: 780px;
-	padding: 20px;
-	background-color: #87CEFA;
+	float: right;
+	display: block;
+	height: 463px;
+	width: 820px;
 	margin-top: -30px;
 }
 
-#acerca p{
+#acerca img{
+	height: 465px;
+	width: 818px;
+
+}
+
+
+#acerca button:hover{
+	text-shadow: 0px 0px 10px #87CEFA;
+}
+
+#acerca2, #acerca3, #acerca4{
+	height: 460px;
+	width: 761px;
+	border: 1px solid #87CEFA;
+}
+
+#acerca2 p{
 	font-style: italic;
 	font-size: 18px;
 	text-align: justify;
 	line-height: 20px;
 	color: white;
-	margin-top: 100px;
+	margin-top: 63px;
 	margin-left: 150px;
 	margin-right: 50px;
 }
 
-#acerca button{
+#acerca2 button{
 	font-size: 13px;
 	text-transform: uppercase;
 	color: #87CEFA;
@@ -393,64 +407,213 @@ button{
 	width: 320px; 
 	height: 50px;
 	padding-top: 18px;
-	margin-left: 434px;
+	margin-left: 400px;
 	margin-top: 60px;
 	border: 1px solid #87CEFA;
 	border-radius: 10px;
 }
 
-#acerca button:hover{
+#acerca2 button:hover{
 	text-shadow: 0px 0px 10px #87CEFA;
 }
 
-#imgacerca{
-	float: right;
-	height: 520px;
-	width: 600px;
-	border: 1px solid black;
+#contenidoacerca3{
+	height: 460px;
+	max-width: 1000px;
 }
 
-.titulonosotros{
-	margin-left: 140px;
+#acerca3{
+	border: 1px solid #263238;
+	background-color: #263238;
 }
+
+#cajatitulos{
+	line-height: 20px;
+	margin-left: 20px;
+	margin-top: 20px;
+	padding: 20px;
+}
+
+#cajatitulos h4{
+	font-family: times new roman, helvetica, arial;
+	color: white;
+	text-shadow: 0px 0px 1px white;
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+
+#cajatitulos h2{
+	color: white;
+	font-family: times new roman, helvetica, arial;
+	font-size: 17px;
+}
+
+#cajacalidad{
+	position: absolute;
+	max-width: 304px;
+	margin-left: 40px;
+	margin-top: 25px;
+}
+
+.titulocalidad{
+	margin-bottom: 8px;
+	color: white;
+	text-shadow: 0px 0px 1px white;
+	font-family: times new roman, helvetica, arial;
+}
+
+.parrafocalidad{
+	max-width: 304px;
+	color: white;
+	text-align: left;
+	line-height: 22px;
+}
+
+
+#cajaresponsabilidad{
+	max-width: 304px;
+	float: right;
+	margin-right: 87px;
+	margin-top: 24px;
+}
+
+.tituloresponsabilidad{
+	margin-bottom: 8px;
+	text-shadow: 0px 0px 1px white;
+	color: white;
+	font-family: times new roman, helvetica, arial;
+}
+
+.parraforesponsabilidad{
+	line-height: 22px;
+	text-align: left;
+	color: white;
+}
+
+
 
 /*---Sección contacto----*/
 #contacto{
-	padding-top: 23px;
-	padding-right: 70px;
-	padding-bottom: 40px;
-	padding-left: 70px;
-	border: 3px solid #1E5A7F;
-	margin: 0px auto;
-	background-color: #87CEFA;
+	padding: 40px;
+	background-color: #F4F4F4;
+	min-height: 800px;
+	margin-top: 50px;
+}
+#contenidocontacto{
+	max-width: 100%;
 }
 
 #cajaformulario{
-	width: 75%;
-	padding: 15px;
-
-}
-
-.formulario input{
-	margin-left: 8px;
-	padding: 10px;
-}
-
-.formulario input:last-child{
+	margin-right: 85px;
+	height: 750px;
+	width: 605px;
 	float: right;
+	background-color: #87CEFA;
 }
-/*----Fin de estilos de seccion contacto-----*/
+#formulario{
+	color: white;
+	margin-top: 85px;
+	text-align: center;
+}
+
+#formulario p{
+	margin-left: 93px;
+	text-align: left;
+	margin-top: 30px;
+}
+
+#formulario input{
+	padding: 10px;
+	width: 400px;
+}
+
+.mensaje{
+	padding-bottom: 90px !important;
+	width: 400px;
+}
+
+#formulario button{
+	background-color: white;
+	color: #87CEFA;
+	width: 100px;
+	height: 45px;
+	padding-top: 13px;
+	margin-right: 90px;
+	border: 1px solid #87CEFA;
+	border-radius: 5px;
+	font-family: times new roman, helvetica, arial;
+	float: right;
+	transition: background-color 700ms;
+}
+
+#formulario button:hover{
+	background-color: lightblue;
+	color: black;
+	text-shadow: 0px 0px 1px #87CEFA;
+	transition: all 500ms;
+}
+
+#contenidocontactanos{
+	margin-left: 118px;
+	height: 600px;
+	width: 600px;
+	float: left;
+}
+
+.parrafocontactanos{
+	margin-top: 115px;
+	font-size: 17px;
+	font-family: times new roman, helvetica, arial;
+	text-align: left;
+	line-height: 22px;
+	color: darkslategray;
+	padding: 15px;
+}
+
+#cajacorreo{
+	font-size: 15px;
+	margin-top: 70px;
+	padding: 15px;
+}
+
+#cajacorreo a{
+	color: darkslategray;
+	text-decoration: none;
+	font-style: italic;
+}
+
+#cajanumero{
+	color: darkslategray;
+	padding: 15px;
+	margin-top: 5px;
+	font-size: 15px;
+	font-style: italic;
+}
+
+.ubicacion{
+	color: darkslategray;
+	padding: 15px;
+	margin-top: 5px;
+	font-size: 15px;
+	font-style: italic;
+}
+/*----Fin Seccion contacto-----*/
 
 	
-/*---Inicio de estilos del footer------*/
+/*---Footer------*/
 footer{
-	height: 100%;
+	height: 40px;
 	width: 100%;
 	text-align: center;
-	background: black;
+	background: darkslategray;
 	color: white;
 	border-top: 1px solid black;
 	font-style: italic;
 }
-/*----Fin de estilos del footer----*/
+#footer h5{
+	margin-left: 220px;
+	text-align: left;
+	margin-top: 10px;
+}
+/*----Footer----*/
 
