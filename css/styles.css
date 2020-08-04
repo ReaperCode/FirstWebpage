@@ -201,8 +201,6 @@ button{
 #menu > ul > li:hover{
 	color: white;
 	display: pointer;
-	background-color: ;
-	box-shadow: 0px 0px 30px #ADD8E6 inset;
 	transform: scale(1.2, 1.2);
 }
 
@@ -251,8 +249,19 @@ button{
 	border-radius: 6px;
 	box-shadow: 0px 0px 2px grey;
 	margin: 20px auto;
-	background-color: #2f4f4f;
+	background: url("../imagenes/bakbaner.png");
 	background-position: -200px -200px;
+	overflow: hidden;
+	animation: bakBanner 10s;
+}
+
+@keyframes bakBanner{
+	0%{
+		background-position: 0px 0px;
+	}
+	100%{
+		background-position: -200px -200px;
+	}
 }
 
 #banner h2{
@@ -261,8 +270,11 @@ button{
 	color:white;
 	font-size: 35px;
 	font-weight: normal;
+	font-family: "BebasNeue";
 	text-shadow: 1px 1px 1px black;
 	margin: 20px auto;
+	margin-left: 12%;
+	animation: showText 10s;
 }
 
 #banner h4{
@@ -271,8 +283,35 @@ button{
 	color:white;
 	font-size: 28px;
 	font-weight: normal;
+	font-family: "BebasNeue";
 	text-shadow: 1px 1px 1px black;
 	margin: 20px auto;
+	margin-left: 22%;
+	animation: showText 10s linear;
+}
+
+@keyframes showText{
+	0%{
+        transform: translateX(-250%) scale(3,3);
+        opacity: 1;
+	}
+	50%{
+        transform: translateX(250%) scale(3,3);
+        opacity: 1;
+	}
+	75%{
+        transform: translateX(-250%) scale(3,3);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+	}
+	100%{
+        transform: translateX(0%) scale(1,1);
+        text-shadow: 2px 2px 1px black;
+        color: white;
+        opacity: 1;
+        
+	}
 }
 
 
@@ -312,7 +351,23 @@ button{
 	height: 176px;
 	border-bottom: 3px solid #87CEFA;
 	border: 1px solid #87CEFA;
-	border-radius: 15px;
+	border-radius: 5px 5px 0px 0px;
+	overflow: hidden;
+	transition: all 300ms;
+}
+
+#card:hover img{
+	background: black;
+	animation: showImg 300ms linear;
+}
+
+@keyframes showImg{
+	from{
+		transform: translateY(-150%);
+	}
+	to{
+		transform: translateY(0%);
+	}
 }
 
 #card{
@@ -322,28 +377,67 @@ button{
 	height: 480px;
 	background-color: white;
 	border: 1px solid #87cefa;
-	border-radius: 15px;
+	border-radius: 5px;
 	margin-left: 100px;
 	margin-top: 80px;
 	cursor: pointer;
+	overflow: hidden;
+	transition: all 300ms;
+}
+
+#card:hover {
+	background: black;
+	color: white;
 }
 
 #card p{
 	width: 97%;
 	text-align: center;
-	font-family: times new roman;
+	font-family: "TrebuchetMS";
 	font-size: 16px;
 	margin-bottom: 40px;
 	line-height: 24px;
+	transition: all 300ms;
+}
+
+#card:hover p{
+	background: black;
+	color: white;
+	animation: showDescription 300ms linear;
+}
+
+@keyframes showDescription{
+	from{
+		transform: translateX(-200%);
+	}
+	to{
+		transform: translateY(0%);
+	}
 }
 
 #card h4{
 	width: 95%;
 	text-align: center;
-	font-family: fajala;
+	font-family: "TrebuchetMS";
 	font-size: 17px;
 	margin-top: 10px;
 	line-height: 25px;
+	transition: all 300ms;
+}
+
+#card:hover h4{
+	background: black;
+	color: white;
+	animation: showTitle 300ms linear;
+}
+
+@keyframes showTitle{
+	from{
+		transform: translateY(-250%);
+	}
+	to{
+		transform: translateY(0%);
+	}
 }
 
 #card button{
@@ -656,7 +750,7 @@ button{
 	
 /*---Footer------*/
 #footer{
-	height: 470px;
+	height: 550px;
 	width: 100%;
 	background: darkslategray;
 	color: white;
@@ -725,8 +819,18 @@ button{
     margin-bottom: 15px;
 }
 
+.redesimg{
+	display: block
+}
+
 #footer #browsers img{
     width: 45px;
 }
+
+#footer #redes img{
+	margin-top: 10px;
+	width: 45px;
+}
+
 
 
