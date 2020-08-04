@@ -16,12 +16,44 @@
 		font-weight: normal;
 		font-style: normal;
 	}
+
+	@font-face{
+		font-family: "BebasNeue";
+		src: url('fonts/BebasNeue.otf');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face{
+	font-family: "icons";
+	src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format('svg'),
+		 url("fonts/websymbols-regular-webfont.eot");
+	src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embeded-opentype"),
+		 url("fonts/websymbols-regular-webfont.woff") format("woff"),
+		 url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	}
+
+	@font-face{
+		font-family: "TrebuchetMS";
+		src: url('fonts/TrebuchetMS.ttf');
+		font-weight: normal;
+		font-style: normal;
+	}
+
 /*---Estilos generales---*/
 *{
 	padding: 0px;
 	margin: 0px;
-
 }
+.icon{
+	font-family: "icons";
+	float: left;
+	margin-right: 7px;
+	margin-top: -px;
+}
+
 	
 body{
 	background-image: url(../imagenes/paven.png);
@@ -30,7 +62,7 @@ body{
 /*---Clearfix----*/
 .clearfix{
 	clear: both;
-	clear: none;
+	float: none;
 }
 
 
@@ -47,14 +79,14 @@ select{
 	padding-top: 2px;
 	padding-bottom: 2px;
 	color: grey;
-	transition: 300ms;
+	transition: all 300ms;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 select:focus{
-	border: 3px solid #ccc
-	color: black;
+	border: 3px solid #ccc;
+	color: #555;
 }
 
 input[type="button"],
@@ -75,8 +107,9 @@ input[type="submit"]:hover
 input[type="reset"]:hover
 button{
 	text-shadow: 2px 2px 30px #ADD8E6;
-	transition: all 700ms
+	transition: all 700ms;
 }
+
 input[type="button"]:active
 input[type="submit"]:active
 input[type="reset"]:active
@@ -88,22 +121,44 @@ button{
 
 
 /*----Inicio de estilos de encabezado-----*/
+
+
+#correoinicio{
+	margin-left: 80px;
+}
+#header span{
+	margin-top: 1px;
+}
+#header a{
+	text-decoration: none;
+}
 #header h5{
 	padding: 5px;
-	margin-left: 100px;
 	color: black;
 }
 #header h5 a{
 	text-decoration: none;
 	color: black;
 }
-#header {
-	min-width: 1024px;
+#cajainstagram{
+	font-size: 14px;
+	margin-right: 100px;
+	float: right;
+	margin-top: -20px;
+}
+
+#cajainstagram a{
+	text-decoration: none;
+	color: black;
+	letter-spacing: 0.5px;
+}
+
+
+#header{
 	width: 100%;
 	height: 30px;
 	margin:0px auto;
 	background-color: #87CEFA;
-
 }
 
 
@@ -111,16 +166,15 @@ button{
 
 /*---Inicio de estilos del menu inicio-----*/
 #menu{
-	width: 99%;
+	margin: 0px auto;
+	width: 100%;
 	height: 40px;
 	text-align: center;
 	background-color: #333333;
 	box-shadow: 0px 0px 4px grey;
 	font-family: sans-serif, helvetica, arial;	
 	font-size: 18px;
-	font-style: italic;
-	padding: 10px;
-	padding-left: 6px;
+	font-style: normal;
 }
 
 #menu ul {
@@ -133,7 +187,7 @@ button{
 #menu > ul > li{
 	line-height: 40px;
 	float: left;
-	transition: all 700ms;
+	transition: all 200ms;
 }
 #menu > ul > li > a{
 	display: block;
@@ -146,10 +200,10 @@ button{
 
 #menu > ul > li:hover{
 	color: white;
-	text-decoration-line: underline;
 	display: pointer;
 	background-color: ;
 	box-shadow: 0px 0px 30px #ADD8E6 inset;
+	transform: scale(1.2, 1.2);
 }
 
 /*---Menu desplegable----*/
@@ -185,135 +239,106 @@ button{
 	text-decoration: none;
 }
 /*---Seccion preinicio--*/
-#preinicio img{
-	width: 100%;
-
+#preinicio{
+	width: 100%; 
+	height: 157px;
+	margin: 0px auto;
 }
 
-#preinicio h2{
+#banner{
+	width: 1250px;
+	border: 10px solid white;
+	border-radius: 6px;
+	box-shadow: 0px 0px 2px grey;
+	margin: 20px auto;
+	background-color: #2f4f4f;
+	background-position: -200px -200px;
+}
+
+#banner h2{
+	display: block;
+	width: 1155px;
+	color:white;
 	font-size: 35px;
+	font-weight: normal;
+	text-shadow: 1px 1px 1px black;
+	margin: 20px auto;
+}
+
+#banner h4{
 	display: block;
-	margin: 0px auto;
-	position: absolute;
-	color: darkslategray;
-	text-shadow: 0px 0px 3px #ccc;
-	margin-top: -655px;
-	margin-left: 174px;
-	border: 3px solid #87CEFA;
-	border-radius: 10px;
-	background-color:  #87CEFA;
-	transition: text-shadow 1s;
+	width: 850px;
+	color:white;
+	font-size: 28px;
+	font-weight: normal;
+	text-shadow: 1px 1px 1px black;
+	margin: 20px auto;
 }
 
-
-#preinicio h2:hover{
-	text-shadow: 1px 1px 30px #87CEFA;
-	transition: 700ms;
-}
-
-#preinicio h4{
-	font-size: 25px;
-	display: block;
-	margin: 0px auto;
-	position: absolute;
-	color: darkslategray;
-	background-color: #87CEFA;
-	border: 1px solid #87CEFA;
-	border-radius: 10px;
-	margin-top: -590px;
-	margin-left: 400px;
-	text-shadow: 1px 1px 3px #87CEFA;
-	transition: text-shadow 1s;
-
-}
-
-
-#preinicio h4:hover{
-	text-shadow: 2px 2px 20px #ADD8E6;
-	transition: 700ms;
-}
-
-#preinicio button{
-	position: absolute;
-	margin-left: 695px;
-	margin-top: -460px;
-	border: 1px solid #87CEFA;
-	border-radius: 7px;
-	text-transform: uppercase;
-	transition: border 1s, background 1s;
-}
-
-#preinicio button:hover{
-	text-shadow: 2px 2px 30px blue !important;
-	background-color: #4682B4 !important;
-	transition: all 500ms
-}
-
-#preinicio a{
-	text-decoration: none;
-	color: black;
-}
 
 /*---Divisor preinicio---*/
+#divider{
+	margin-top: 40px;
+	margin-left: 40px;
+	width: 90%;
+}
 
-.divisorh1{
+#divider h1{
 	color: #87CEFA;
 }
 
-.divisorh2{
+#divider h2{
 	font-size: 35px;
 	color: darkslategray;
 	text-shadow: 0px 0px 1px darkslategray;
 }
 
-.divisorh3{
+#divider h3{
 	text-transform: uppercase;
 	color: darkgray;
 }
+
 /*--- Seccion inicio---*/
 #inicio{
-	width: 75%;
-	margin: 0px auto;
+	width: 80%;
+	margin: 20px auto;
+	margin-top: 20px;
 	padding: 15px;
 	min-height: 780px;
-	margin-top: 125px;
 }
 
-#contenidoinicio{
-	max-width: 1245px;
-	margin-left: -60px;
-}
-
-#contenidoinicio button{
-	width: 60px;
-}
-
-
-#cajainicio img{
-	width: 315px;
+#card img{
+	width: 100%;
 	height: 176px;
 	border-bottom: 3px solid #87CEFA;
+	border: 1px solid #87CEFA;
+	border-radius: 15px;
 }
 
-
-#cajainicio{
+#card{
+	float: left;
 	display: block;
-	width: 315px;
+	width: 22%;
 	height: 480px;
 	background-color: white;
-	float: left;
+	border: 1px solid #87cefa;
+	border-radius: 15px;
 	margin-left: 100px;
 	margin-top: 80px;
+	cursor: pointer;
 }
-#cajainicio p{
+
+#card p{
+	width: 97%;
 	text-align: center;
 	font-family: times new roman;
 	font-size: 16px;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 	line-height: 24px;
 }
 
-#cajainicio h4{
+#card h4{
+	width: 95%;
 	text-align: center;
 	font-family: fajala;
 	font-size: 17px;
@@ -321,73 +346,61 @@ button{
 	line-height: 25px;
 }
 
-#cajainicio button{
+#card button{
 	position: absolute;
 	display: block;
-	width: 120px;
+	width: 7%;
 	padding: 13px;
 	background-color: #87CEFA;
 	cursor: pointer;
 	color: white;
 	font-size: 12px;
+	font-family: "TrebuchetMS";
 	text-transform: uppercase;
-	margin-left: 102px;
+	margin-left: 78px;
 	margin-top: -10px;
 	color: black;
 	border: 1px solid #87CEFA;
 	border-radius: 7px;
 	text-shadow: 1px 1px 3px #ccc;
-	transition: text-shadow 1s, background 1s;
+	transition: all 200ms;
 }
 
-#cajainicio button:hover{
+#card button:hover{
 	text-shadow: 2px 2px 30px blue !important;
 	background-color: #87CEFA !important;
-	transition: all 500ms
+	transform: scale(1.2, 1.2);
 }
 
-#cajainicio a{
+#card a{
 	text-decoration: none;
 }
 
 
 /*---Seccion nosotros---*/
-#nosotros{
+#about-us{
 	margin:0px auto;
 	width: 100%;
-	min-height: 1200px;
+	min-height: 1000px;
 	margin-top: 40px;
 }
 
-#contenidonosotros{
-	max-width: 1585px;
-}
-#acerca{
+#about{
 	float: right;
 	display: block;
 	height: 463px;
-	width: 820px;
+	width: 50%;
 	margin-top: -30px;
 }
 
-#acerca img{
+#about img{
 	height: 465px;
-	width: 818px;
-
+	width: 100%;
 }
 
 
-#acerca button:hover{
-	text-shadow: 0px 0px 10px #87CEFA;
-}
-
-#acerca2, #acerca3, #acerca4{
-	height: 460px;
-	width: 761px;
-	border: 1px solid #87CEFA;
-}
-
-#acerca2 p{
+#about-2 p{
+	width: 70%;
 	font-style: italic;
 	font-size: 18px;
 	text-align: justify;
@@ -396,45 +409,62 @@ button{
 	margin-top: 63px;
 	margin-left: 150px;
 	margin-right: 50px;
+	padding: 40px;
 }
 
-#acerca2 button{
+#about-2 button{
 	font-size: 13px;
+	font-family: "TrebuchetMS";
 	text-transform: uppercase;
-	color: #87CEFA;
-	position: absolute;
+	color: #263238;
 	background-color: white !important;
-	width: 320px; 
+	width: 40%; 
 	height: 50px;
 	padding-top: 18px;
 	margin-left: 400px;
 	margin-top: 60px;
 	border: 1px solid #87CEFA;
 	border-radius: 10px;
+	transition: 500ms;
 }
 
-#acerca2 button:hover{
+#about button:hover{
 	text-shadow: 0px 0px 10px #87CEFA;
 }
-
-#contenidoacerca3{
-	height: 460px;
-	max-width: 1000px;
+#about-2 a{
+	text-decoration: none;
 }
 
-#acerca3{
+#about-2 button:hover{
+	text-shadow: 0px 0px 10px #87CEFA;
+	color: black;
+	background-color: black;
+	transition: all 200ms;
+	transform: scale(1.1, 1.1);
+}
+
+#about-content-3{
+	height: 460px;
+	max-width: 100%;
+}
+
+#about-3{
 	border: 1px solid #263238;
 	background-color: #263238;
 }
 
-#cajatitulos{
+#about-4{
+	width: 49%;
+}
+
+#tittle-box{
 	line-height: 20px;
 	margin-left: 20px;
 	margin-top: 20px;
 	padding: 20px;
 }
 
-#cajatitulos h4{
+#tittle-box h4{
 	font-family: times new roman, helvetica, arial;
 	color: white;
 	text-shadow: 0px 0px 1px white;
@@ -442,49 +472,49 @@ button{
 	margin-bottom: 25px;
 }
 
-#cajatitulos h2{
+#tittle-box h2{
 	color: white;
 	font-family: times new roman, helvetica, arial;
 	font-size: 17px;
 }
 
-#cajacalidad{
+#quality-box{
 	position: absolute;
-	max-width: 304px;
+	max-width: 24%;
 	margin-left: 40px;
 	margin-top: 25px;
 }
 
-.titulocalidad{
+.quality-tittle{
 	margin-bottom: 8px;
 	color: white;
 	text-shadow: 0px 0px 1px white;
 	font-family: times new roman, helvetica, arial;
 }
 
-.parrafocalidad{
-	max-width: 304px;
+#quality-box p{
+	width: 85%;
 	color: white;
 	text-align: left;
 	line-height: 22px;
 }
 
 
-#cajaresponsabilidad{
-	max-width: 304px;
+#response-box{
+	width: 49%;
 	float: right;
-	margin-right: 87px;
+	margin-right: 20px;
 	margin-top: 24px;
 }
 
-.tituloresponsabilidad{
+#response-box h4{
 	margin-bottom: 8px;
 	text-shadow: 0px 0px 1px white;
 	color: white;
 	font-family: times new roman, helvetica, arial;
 }
 
-.parraforesponsabilidad{
+#response-box p{
 	line-height: 22px;
 	text-align: left;
 	color: white;
@@ -493,38 +523,42 @@ button{
 
 
 /*---Sección contacto----*/
-#contacto{
+#contact{
 	padding: 40px;
-	background-color: #F4F4F4;
+	background-color: #f4f4f4;
 	min-height: 800px;
 	margin-top: 50px;
 }
-#contenidocontacto{
-	max-width: 100%;
-}
 
-#cajaformulario{
+#form-box{
 	margin-right: 85px;
 	height: 750px;
-	width: 605px;
+	width: 40%;
 	float: right;
 	background-color: #87CEFA;
+	border: 1px solid #87cefa;
+	border-radius: 6px;
+	box-shadow: 1px 1px 20px #87CEFA inset;
 }
-#formulario{
+#form{
 	color: white;
 	margin-top: 85px;
 	text-align: center;
 }
 
-#formulario p{
+#form p{
 	margin-left: 93px;
 	text-align: left;
 	margin-top: 30px;
+	color: darkslategray;
 }
 
-#formulario input{
+#form input{
 	padding: 10px;
-	width: 400px;
+	width: 75%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px #ccc inset;
 }
 
 .mensaje{
@@ -532,35 +566,36 @@ button{
 	width: 400px;
 }
 
-#formulario button{
+#form button{
 	background-color: white;
-	color: #87CEFA;
-	width: 100px;
+	color: black;
+	width: 20%;
 	height: 45px;
 	padding-top: 13px;
 	margin-right: 90px;
 	border: 1px solid #87CEFA;
 	border-radius: 5px;
+	box-shadow: 1px 1px 5px #87CEFA inset;
+	background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
 	font-family: times new roman, helvetica, arial;
 	float: right;
-	transition: background-color 700ms;
+	transition: all 200ms;
 }
 
-#formulario button:hover{
-	background-color: lightblue;
-	color: black;
-	text-shadow: 0px 0px 1px #87CEFA;
-	transition: all 500ms;
+#form button:hover{
+	box-shadow: 0px 0px 1px #87CEFA;
+	transform: scale(1.2, 1.2);
 }
 
-#contenidocontactanos{
+#contact-content{
+	background-color: #f4f4f4;
 	margin-left: 118px;
 	height: 600px;
-	width: 600px;
+	width: 40%;
 	float: left;
 }
 
-.parrafocontactanos{
+#contact-content h4{
 	margin-top: 115px;
 	font-size: 17px;
 	font-family: times new roman, helvetica, arial;
@@ -570,19 +605,19 @@ button{
 	padding: 15px;
 }
 
-#cajacorreo{
+#email-box{
 	font-size: 15px;
 	margin-top: 70px;
 	padding: 15px;
 }
 
-#cajacorreo a{
+#email-box a{
 	color: darkslategray;
 	text-decoration: none;
 	font-style: italic;
 }
 
-#cajanumero{
+#num-box{
 	color: darkslategray;
 	padding: 15px;
 	margin-top: 5px;
@@ -590,30 +625,108 @@ button{
 	font-style: italic;
 }
 
-.ubicacion{
+.location{
 	color: darkslategray;
 	padding: 15px;
 	margin-top: 5px;
 	font-size: 15px;
 	font-style: italic;
 }
-/*----Fin Seccion contacto-----*/
+
+.instagram{
+	padding: 15px;
+	color: darkslategray;
+	font-style: italic;	
+}
+
+.instagram a{
+	display: block;
+	width: 25%;
+	text-decoration: none;
+	color: darkslategray;
+	text-shadow: 0px 0px 0px #87CEFA;
+	transition: text-shadow 500ms;
+}
+
+.instagram a:hover{
+	text-shadow: 0px 0px 1px #87CEFA;
+	text-decoration: underline;
+}
 
 	
 /*---Footer------*/
-footer{
-	height: 40px;
+#footer{
+	height: 470px;
 	width: 100%;
-	text-align: center;
 	background: darkslategray;
 	color: white;
 	border-top: 1px solid black;
-	font-style: italic;
+	overflow: hidden;
 }
+
+#footer .wrap div{
+	float: left;
+    width: 320px;
+    height: 370px;
+	margin: 70px;
+	margin-right: 100px;
+    text-align: center;
+    color: white;
+    font-family: "TrebuchetMS";
+}
+
+#footer a{
+    text-decoration: none;
+    color: #87CEFA;
+    transition: all 300ms;
+}
+
 #footer h5{
-	margin-left: 220px;
-	text-align: left;
-	margin-top: 10px;
+    display: block;
+    background: url(../imagenes/pxgray.png), white;
+    height: 50px;
+	text-align: center;
+	letter-spacing: 2px;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
-/*----Footer----*/
+
+#footer ul{
+    text-align: left;
+    margin: 20px;
+    font-size: 25px;
+}
+
+#footer ul li{
+	margin-top: 10px;
+	padding: 5px;
+	border-bottom: 1px solid white;
+}
+
+#footer ul li a{
+	display: block;
+	height: 40px;
+}
+
+#footer iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+
+#footer img{
+    margin-bottom: 15px;
+}
+
+#footer #browsers img{
+    width: 45px;
+}
+
 

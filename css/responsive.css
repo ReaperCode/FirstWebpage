@@ -1,0 +1,49 @@
+/* Responsive index.html*/
+
+
+/* Responsive desde 1399px*/
+
+@media (max-width: 1399px){
+
+	#titulos{
+		width: 100%;
+		margin-left: 115px;
+	}
+
+	#inicio{
+		margin-left: 136px;
+		margin-top: -80px;
+	}
+
+	#cajainicio{
+		margin-left: 8%;
+		width: 24%;
+	}
+
+}
+
+/*Responsive desde 1199px*/
+
+@media (max-width: 1199px){
+
+	#titulos{
+		margin-left: 50px;
+		width: 90%;
+	}
+
+	#titulos h2{
+		font-size: 100%;
+	}
+
+	#titulos h4{
+		font-size: 21px;
+	}
+
+}
+
+
+
+
+
+
+
